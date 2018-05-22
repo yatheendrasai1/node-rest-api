@@ -4,7 +4,6 @@ var todo=mongoose.model('Todo',{
   todo:{
     type: String,
     required: true,
-    minlength:1,
     trim: true
   },
   completed:{
@@ -13,7 +12,7 @@ var todo=mongoose.model('Todo',{
   },
   completedAt:{
     type: Number,
-    default:null
+    default: null
   }
 });
 
